@@ -1,0 +1,19 @@
+<div class="tab-content">
+                    <div class="tab-pane active" id="tab01" role="tabpanel">
+                        <h3>Przykładowe lekcje <a href="{{ url('/films') }}" class="btn btn-md btn-primary" role="button">Więcej</a></h3>
+                        @foreach($films as $film)
+                            <div class="col-md-3 col-sm-6">
+                                <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe src="{{ $film->embed }}"></iframe>
+                                        </div>
+                                        <!--<div class="caption">
+                                            <p><a href="#" class="btn btn-xs btn-primary" role="button">Szczegóły</a></p>
+                                        </div>-->
+                                </div>
+                            </div>
+                        @endforeach
+                        @foreach($user as $us)
+                            {{ Auth::user()->films }}
+                        @endforeach
+                    </div>
