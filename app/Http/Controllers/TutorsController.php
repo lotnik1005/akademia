@@ -66,4 +66,10 @@ class TutorsController extends Controller
         })->get();
         return view('tutors.specialization', ['tutors_specializations'=>$tutors_specializations]);
     }
+
+    public function showik($id) {
+        $user = User::where('id', $id);
+
+        return view('tutors.showik', ['users' => $user]);
+    }
 }

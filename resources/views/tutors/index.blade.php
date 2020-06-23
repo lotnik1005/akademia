@@ -17,12 +17,12 @@
                             <div class="caption">
                                 <h3>{{ $tutor->name }} <br />{{ $tutor->surname }}  <br /><small>
                                     </small> </h3>
-                                <p><a href="{{ route('tutor', ['id'=>$tutor->id]) }}" class="btn btn-primary" role="button">Szczegóły</a></p>
+                                <p><a href="{{ url('tutor', ['id'=>$tutor->id]) }}" class="btn btn-primary" role="button">Szczegóły</a></p>
                             </div>
                         </div>
                     </div>
 
-                @endforeach
+                    @endforeach
 
 
             </div>

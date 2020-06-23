@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Edycja użytkownika</div>
                 <div class="panel-body">
-                    
+
                     <img src="{{ url('user-avatar/'. $user->id . '/600') }}" alt="" class="img-responsive">
                     <br>
 
@@ -25,7 +25,7 @@
                                         <span class="help-block">
                                             <strong>{{ $errors->first('avatar') }}</strong>
                                         </span>
-                                    @endif                                    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                                         <span class="help-block">
                                             <strong>{{ $errors->first('name') }}</strong>
                                         </span>
-                                    @endif                                    
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                                         <span class="help-block">
                                             <strong>{{ $errors->first('email') }}</strong>
                                         </span>
-                                    @endif                                      
+                                    @endif
                                 </div>
                             </div>
                         </div>

@@ -18,6 +18,7 @@ Route::get('/', 'TutorsController@index');
 Route::get('/tutors/create', 'TutorsController@create');
 Route::post('/tutors', 'TutorsController@store');
 Route::get('/tutor'.'/{id}', 'TutorsController@show')->name('tutor');
+Route::get('/showik'.'/{id}', 'TutorsController@showik');
 Route::get('/tutors/search', 'TutorsController@search');
 
 Route::get('/home', 'HomeController@index');
